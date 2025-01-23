@@ -1,64 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Různobarevná stránka</title>
+    <title>Barvy měnící se stránka</title>
     <style>
-        /* Definování pozadí celé stránky */
+        /* Úprava základního vzhledu */
         body {
-            background-color: #f0f0f0; /* Světle šedé pozadí */
-            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-        }
-
-        /* Barvy různých sekcí */
-        header {
-            background-color: #ff6347; /* Rajčatová červená */
-            color: white;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding: 20px;
+            font-size: 3rem;
+            transition: background-color 1s ease;
         }
 
-        section {
-            background-color: #98fb98; /* Světle zelená */
-            padding: 20px;
-            margin: 10px;
-        }
-
-        footer {
-            background-color: #4682b4; /* Ocelově modrá */
+        .content {
+            position: absolute;
+            font-weight: bold;
+            font-size: 4rem;
             color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
     </style>
 </head>
 <body>
+    <div class="content">AHOJ</div>
 
-<header>
-    <h1>Vítejte na naší stránce!</h1>
-</header>
+    <script>
+        // Funkce pro změnu barvy pozadí
+        function changeBackgroundColor() {
+            // Pole s různými barvami
+            const colors = ['#FF6347', '#98FB98', '#4682B4', '#FFD700', '#8A2BE2'];
+            
+            // Vyber náhodnou barvu z pole
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            // Nastav pozadí stránky na novou barvu
+            document.body.style.backgroundColor = randomColor;
+        }
 
-<section>
-    <h2>Hlavní obsah</h2>
-    <p>Toto je sekce s různými barvami.</p>
-</section>
+        // Změna barvy každé 3 sekundy
+        setInterval(changeBackgroundColor, 3000);
 
-<footer>
-    <p>Footer s jinou barvou.</p>
-</footer>
-
-</body>
-</html> initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+        // Po načtení stránky okamžitě změní barvu pozadí
+        changeBackgroundColor();
+    </script>
 </body>
 </html>
