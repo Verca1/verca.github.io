@@ -3,40 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Moje webová stránka</title>
-    <link rel="stylesheet" href="style.css"> <!-- Pokud máš vlastní CSS -->
+    <title>Kočky - Můj úžasný web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Hlavička -->
     <header>
-        <h1>Vítejte na mé webové stránce!</h1>
+        <h1>Vítejte na stránkách o kočkách!</h1>
+        <p>Všechno, co potřebujete vědět o těchto úžasných zvířatech.</p>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#home">Domů</a></li>
-            <li><a href="#about">O mně</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
-    
-    <section id="home">
-        <h2>Domů</h2>
-        <p>Tohle je úvodní stránka mého webu!</p>
-    </section>
-    
-    <section id="about">
-        <h2>O mně</h2>
-        <p>Jsem nadšený webový vývojář, který se učí HTML, CSS a JavaScript.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Pokud mě chcete kontaktovat, napište na <a href="mailto:me@example.com">me@example.com</a>.</p>
+
+    <!-- Úvodní sekce -->
+    <section class="intro">
+        <h2>Proč jsou kočky skvělé?</h2>
+        <p>Kočky jsou nejen krásné, ale také velice samostatné a milé. Jsou ideálními domácími mazlíčky pro mnoho lidí.</p>
+        <!-- Obrázek kočky -->
+        <img src="images/kocka1.jpg" alt="Kočka spící na pohovce" class="featured-image">
     </section>
 
+    <!-- Zajímavosti o kočkách -->
+    <section class="facts">
+        <h2>Zajímavosti o kočkách</h2>
+        <ul>
+            <li>Kočky spí až 16 hodin denně!</li>
+            <li>Kočky mají výborný sluch a vidí v noci mnohem lépe než lidé.</li>
+            <li>Kočky mají schopnost vyskočit až 5x svou výšku.</li>
+        </ul>
+    </section>
+
+    <!-- Kočičí galerie -->
+    <section class="gallery">
+        <h2>Kočičí galerie</h2>
+        <div class="gallery-grid">
+            <img src="https://www.zoochleby.cz/uploads/images/6131/large/003372-6131.jpg" alt="Kočka na zahradě">
+            <img src="https://blog.akinu.cz/upload/articles/261_articleBig20230907095951.jpg" alt="Kočka na stromě">
+        </div>
+    </section>
+
+    <!-- Patička -->
     <footer>
-        <p>&copy; 2025 Moje webová stránka</p>
+        <p>&copy; 2025 Web o kočkách. Všechna práva vyhrazena.</p>
     </footer>
 </body>
 </html>

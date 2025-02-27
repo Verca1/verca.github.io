@@ -1,0 +1,96 @@
+/* Reset pro základní nastavení */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Základní nastavení pro celé tělo stránky */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hlavička stránky */
+header {
+    background-color: #ff8c00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Úvodní sekce */
+.intro {
+    padding: 40px;
+    text-align: center;
+}
+
+.intro .featured-image {
+    width: 80%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Sekce s fakty o kočkách */
+.facts {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+.facts h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.facts ul {
+    list-style-type: none;
+}
+
+.facts li {
+    margin: 10px 0;
+}
+
+/* Galerie obrázků */
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Patička */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
