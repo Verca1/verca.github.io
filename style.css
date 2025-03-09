@@ -57,3 +57,22 @@ nav ul li a {
     border-radius: 10px; /* Volitelné: zakulacené rohy */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stín pro lepší vzhled */
 }
+/* Galerie obrázků */
+.galerie {
+    display: flex;
+    flex-direction: column; /* Obrázky pod sebou */
+    align-items: center; /* Zarovnání na střed */
+    width: 100%;
+    padding: 20px;
+}
+
+/* Obrázky - sjednocení velikosti */
+.galerie img {
+    width: 80%; /* Každý obrázek bude zabírat 80 % šířky stránky */
+    max-width: 800px; /* Maximální šířka */
+    height: 400px; /* VŠECHNY obrázky budou mít stejnou výšku */
+    object-fit: cover; /* Zachová poměr a ořízne okraje, pokud je potřeba */
+    margin-bottom: 20px; /* Mezera mezi obrázky */
+    border-radius: 10px; /* Zakulacené rohy (volitelné) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Přidání stínu pro lepší vzhled */
+}
