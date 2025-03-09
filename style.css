@@ -121,7 +121,8 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 img {
-    width: 100%;
-    height: auto;
     display: block;
+    margin: 20px auto; /* Odsazení 20px a zarovnání na střed */
+    max-width: 100%; /* Obrázek nebude větší než šířka rodiče */
+    height: auto; /* Zachová správný poměr stran */
 }
