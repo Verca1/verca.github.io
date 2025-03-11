@@ -1,18 +1,27 @@
 body {
-    background-color: #1a1a80;
-    color: white;
+    background-color: #f0f0f0;  /* Světlejší pozadí */
+    color: #333333;  /* Světlejší barva textu */
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 header, footer {
-    background-color: #000066;
+    background-color: #004080;  /* Mírně tmavší modrá pro kontrast */
     padding: 15px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -25,12 +34,31 @@ nav ul li a {
     text-decoration: none;
 }
 
-.study-purpose {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px;
-    color: lightgray;
+main {
+    padding: 20px;
 }
 
+main h2 {
+    color: #004080;  /* Stejná modrá pro nadpisy */
+}
 
+footer {
+    font-size: 14px;
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+}
+
+/* Sekce pro studijní účely */
+.study-purpose {
+    background-color: #ffff99;  /* Světle žluté pozadí pro upozornění */
+    color: #ff6600;  /* Oranžový text pro zvýraznění */
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.study-purpose strong {
+    font-size: 1.2em;
+}
 
