@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plemena koček</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Zajištění správné velikosti obrázků plemen */
+        .breed img {
+            width: 70%;        /* Šířka obrázků */
+            max-width: 500px;  /* Maximální šířka obrázků */
+            height: auto;      /* Udržení proporcí */
+            display: block;
+            margin: 0 auto;    /* Zarovnání na střed */
+        }
+
+        .breed {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,24 +34,22 @@
     </header>
 
     <main>
+        <!-- Plemena koček -->
         <section class="breed">
             <h2>Ragdoll</h2>
             <p>Ragdoll kočky jsou známé svou klidnou povahou a láskou k lidem. Mají dlouhou, hedvábnou srst a modré oči.</p>
-            <!-- Opravený obrázek -->
             <img src="https://www.cats.org.uk/media/11901/ragdoll.jpg" alt="Ragdoll kočka">
         </section>
 
         <section class="breed">
             <h2>Siamská kočka</h2>
             <p>Siamské kočky jsou velmi komunikativní a mají výrazné modré oči. Jsou známé svou štíhlou postavou a elegantním vzhledem.</p>
-            <!-- Opravený obrázek -->
             <img src="https://www.cats.org.uk/media/11883/siamese.jpg" alt="Siamská kočka">
         </section>
 
         <section class="breed">
             <h2>Perská kočka</h2>
             <p>Perské kočky jsou známé svým kulatým obličejem a dlouhou, hustou srstí. Jsou velmi klidné a přítulné.</p>
-            <!-- Opravený obrázek -->
             <img src="https://www.cats.org.uk/media/11902/persian.jpg" alt="Perská kočka">
         </section>
     </main>
@@ -46,5 +59,3 @@
     </footer>
 </body>
 </html>
-
-
