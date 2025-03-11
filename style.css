@@ -1,60 +1,36 @@
-/* Reset stylů */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-/* Hlavička */
-header {
-    background: #ff9900;
+    background-color: #1a1a80;
     color: white;
+    font-family: Arial, sans-serif;
     text-align: center;
-    padding: 20px;
 }
 
-/* Navigace */
+header, footer {
+    background-color: #000066;
+    padding: 15px;
+}
+
 nav ul {
-    display: flex;
-    justify-content: center;
     list-style: none;
-    background: #333;
-    padding: 10px;
+    padding: 0;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+.study-purpose {
     font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: lightgray;
 }
 
-/* Galerie obrázků */
-.galerie {
-    display: flex;
-    flex-direction: column; /* Obrázky pod sebou */
-    align-items: center; /* Zarovnání na střed */
-    width: 100%;
-    padding: 20px;
-}
-
-/* Obrázky - sjednocení velikosti */
-.galerie img {
-    width: 600px; /* Pevná šířka pro všechny obrázky */
-    height: 400px; /* Pevná výška pro všechny obrázky */
-    object-fit: cover; /* Ořízne obrázky tak, aby se vešly do daného rozměru bez deformace */
-    margin-bottom: 20px; /* Mezera mezi obrázky */
-    border-radius: 10px; /* Volitelné: zakulacené rohy */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Volitelné: stín pro lepší vzhled */
-}
 
 
