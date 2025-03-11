@@ -49,7 +49,7 @@ footer {
     padding: 10px;
 }
 
-/* Sekce pro studijní účely */
+/* Studijní účely */
 .study-purpose {
     background-color: #ffff99;  /* Světle žluté pozadí pro upozornění */
     color: #ff6600;  /* Oranžový text pro zvýraznění */
@@ -60,5 +60,46 @@ footer {
 
 .study-purpose strong {
     font-size: 1.2em;
+}
+
+/* Galerie koček */
+.galerie {
+    padding: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Flexibilní mřížka pro obrázky */
+    gap: 15px;
+    justify-items: center;  /* Zarovná obrázky na střed */
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;  /* Jemné zaoblení rohů obrázků */
+}
+
+/* Plemena koček */
+.breed img {
+    max-width: 80%;  /* Sjednocená velikost obrázků */
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Texty a obrázky pod sebou */
+.breed {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.breed h2 {
+    color: #004080;  /* Stejná modrá pro nadpisy plemen */
+}
+
+.breed p {
+    font-size: 16px;
+    color: #555;
 }
 
